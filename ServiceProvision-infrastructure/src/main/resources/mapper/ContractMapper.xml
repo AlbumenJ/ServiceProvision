@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.albumen.project.ContractMapper">
+  <resultMap id="BaseResultMap" type="com.albumen.project.Contract">
+    <!--@mbg.generated-->
+    <!--@Table contract-->
+    <result column="contract_id" jdbcType="INTEGER" property="contractId" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="detail" jdbcType="VARCHAR" property="detail" />
+    <result column="sign_date" jdbcType="TIMESTAMP" property="signDate" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    contract_id, `status`, detail, sign_date
+  </sql>
+</mapper>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.albumen.worker.WorkerMapper">
+  <resultMap id="BaseResultMap" type="com.albumen.worker.Worker">
+    <!--@mbg.generated-->
+    <!--@Table worker-->
+    <result column="worker_id" jdbcType="INTEGER" property="workerId" />
+    <result column="category" jdbcType="VARCHAR" property="category" />
+    <result column="description" jdbcType="VARCHAR" property="description" />
+    <result column="contact" jdbcType="VARCHAR" property="contact" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    worker_id, category, description, contact, `name`
+  </sql>
+</mapper>

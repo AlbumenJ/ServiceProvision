@@ -1,4 +1,4 @@
-package com.albumen.order;
+package com.albumen;
 
 //package by domain, not by duty
 
