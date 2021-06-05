@@ -3,7 +3,6 @@ package com.albumen.result;
 /**
  *
  * @author Albumen
- * @date 2020/5/3
  */
 public class ResultConstants {
 

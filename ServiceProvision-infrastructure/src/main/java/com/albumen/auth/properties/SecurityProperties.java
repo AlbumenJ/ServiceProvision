@@ -18,6 +18,6 @@ public class SecurityProperties {
     /**
      * 启用Session存储Token
      */
-    private boolean enableSession = false;
+    private boolean enableSession = true;
 
 }

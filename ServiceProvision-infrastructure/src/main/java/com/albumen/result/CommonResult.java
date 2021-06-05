@@ -6,7 +6,6 @@ import lombok.experimental.Accessors;
 /**
  *
  * @author Albumen
- * @param <T>
  */
 @Data
 @Accessors(chain = true)
