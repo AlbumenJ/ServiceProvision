@@ -15,7 +15,7 @@
     <dependencies>
         <dependency>
             <groupId>com.albumen</groupId>
-            <artifactId>ServiceProvision-app</artifactId>
+            <artifactId>ServiceProvision-domain</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>

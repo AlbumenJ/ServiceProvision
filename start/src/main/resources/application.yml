@@ -1,0 +1,10 @@
+project:
+  name: start
+
+spring:
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://rm-wz9f58321pqgrc5g1uo.mysql.rds.aliyuncs.com:3306/serviceprovision
+      username: serviceprovision
+      password: yeth5zeap2DRUF_jeak

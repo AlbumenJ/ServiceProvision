@@ -20,9 +20,7 @@
     </properties>
 
     <modules>
-        <module>ServiceProvision-client</module>
         <module>ServiceProvision-adapter</module>
-        <module>ServiceProvision-app</module>
         <module>ServiceProvision-domain</module>
         <module>ServiceProvision-infrastructure</module>
         <module>start</module>
@@ -57,16 +55,6 @@
             <dependency>
                 <groupId>com.albumen</groupId>
                 <artifactId>ServiceProvision-adapter</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.albumen</groupId>
-                <artifactId>ServiceProvision-client</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.albumen</groupId>
-                <artifactId>ServiceProvision-app</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
