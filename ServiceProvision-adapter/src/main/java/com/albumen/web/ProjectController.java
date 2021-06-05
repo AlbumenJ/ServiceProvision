@@ -26,4 +26,9 @@ public class ProjectController {
     public CommonResult<List<ProjectDto>> getMyProject() {
         return new CommonResult<List<ProjectDto>>().success(projectService.getMyProject());
     }
+
+    @RequestMapping("/signContract")
+    public CommonResult<Void> signContract(@RequestParam("contractId") Integer contractId) {
+        return new CommonResult<Void>().setSuccess(projectService.signContract(contractId));
+    }
 }
