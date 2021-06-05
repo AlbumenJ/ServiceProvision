@@ -22,7 +22,7 @@ public class CustomerServiceImpl implements CustomerService {
         User user = new User();
         user.setUsername(username);
         user.setPassword(password);
-        user.setRoleId(1);
+        user.setRoleId(2);
 
         userMapper.insert(user);
 
