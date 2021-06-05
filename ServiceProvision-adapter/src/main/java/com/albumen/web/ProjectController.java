@@ -3,8 +3,10 @@ package com.albumen.web;
 import com.albumen.domain.project.ProjectDto;
 import com.albumen.domain.project.ProjectService;
 import com.albumen.project.Project;
+import com.albumen.project.TimeTable;
 import com.albumen.result.CommonResult;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -31,4 +33,10 @@ public class ProjectController {
     public CommonResult<Void> signContract(@RequestParam("contractId") Integer contractId) {
         return new CommonResult<Void>().setSuccess(projectService.signContract(contractId));
     }
+
+    @RequestMapping("/submitTimeTable")
+    public CommonResult<Void> submitTimeTable(@RequestParam("projectId") Integer projectId, @RequestBody List<TimeTable> tableList) {
+        return new CommonResult<Void>().setSuccess(projectService.submitTimeTable(projectId, tableList));
+    }
+
 }

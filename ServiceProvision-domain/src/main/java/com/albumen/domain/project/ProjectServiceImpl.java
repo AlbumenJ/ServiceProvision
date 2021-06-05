@@ -97,4 +97,19 @@ public class ProjectServiceImpl implements ProjectService {
 
         return contractMapper.update(null, updateWrapper) == 1;
     }
+
+    @Override
+    public boolean submitTimeTable(Integer projectId, List<TimeTable> tableList) {
+        QueryWrapper<TimeTable> queryWrapper = new QueryWrapper<>();
+        queryWrapper.lambda().eq(TimeTable::getProjectId, projectId);
+        timeTableMapper.delete(queryWrapper);
+
+        tableList.forEach(timeTable -> {
+            timeTable.setTimeTableId(null);
+            timeTable.setProjectId(projectId);
+            timeTableMapper.insert(timeTable);
+        });
+
+        return true;
+    }
 }
